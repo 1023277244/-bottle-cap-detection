@@ -181,9 +181,19 @@ application/**/data/
 application/**/logs/
 
 # Bottle cap project — generated outputs
-output/
 checkpoints/
 data/bottle_cap/
 
-# Video files
+# Output (keep annotated result + sample alarms)
+output/alarms/
+!output/alarms/detect03_f292_score60.12.jpg
+!output/alarms/detect04_f414_score66.89.jpg
+output/alarm_log.csv
+output/abnormal_11s_*.jpg
+output/debug_*.jpg
+output/score_curve.png
+
+# Video files — only exclude raw, keep project videos
 *.mp4
+!data/videos/*.mp4
+!output/annotated_result.mp4
