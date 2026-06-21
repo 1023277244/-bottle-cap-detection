@@ -1,0 +1,13 @@
+roi:
+  x1: 821
+  y1: 536
+  x2: 990
+  y2: 684
+threshold: 50.0
+stable_seconds: 0.5
+decision_frames: 5
+exit_frames: 15
+output:
+  video_path: output/result_video.mp4
+  alarm_dir: output/alarms
+  log_file: output/alarm_log.csv
